@@ -1,0 +1,38 @@
+{
+  "name": "opencode-with-agy",
+  "author": "Toil",
+  "homepage": "https://github.com/ilyhalight/opencode-with-agy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyhalight/opencode-with-agy.git"
+  },
+  "version": "0.1.1",
+  "description": "OpenCode plugin to use your Antigravity subscription over the official agy ACP",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "build": "tsup && tsc -p tsconfig.build.json",
+    "smoke": "bun run scripts/smoke.ts"
+  },
+  "main": "dist/plugin.js",
+  "types": "dist/plugin.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "agy",
+    "antigravity",
+    "acp"
+  ],
+  "devDependencies": {
+    "@ai-sdk/provider": "4.0.38",
+    "@opencode/plugin": "^2.1.0",
+    "@types/bun": "latest",
+    "tsup": "^9.0.0",
+    "typescript": "^7.0.2"
+  }
+}
